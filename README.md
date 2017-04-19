@@ -1,3 +1,3 @@
 # openskope/base
 
-Base image used for other SKOPE Docker images.
+Base image used by other SKOPE Docker images.
