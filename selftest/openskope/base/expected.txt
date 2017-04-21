@@ -1,0 +1,14 @@
+docker image name               : openskope/base
+os name                         : GNU/Linux
+kernel version                  : 4.9.13-moby
+target hardware platform        : x86_64
+user name                       : skope
+primary user group name         : skope
+user id                         : 1000
+primary user group id           : 1000
+all groups user is member of    : skope
+user home directory             : /home/skope
+properties of home directory    : drwxr-xr-x skope skope /home/skope
+initial working directory       : /workspace
+properties of working directory : drwxr-xr-x skope skope /workspace
+user shell                      : /bin/bash

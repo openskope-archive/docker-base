@@ -1,7 +1,11 @@
 from ubuntu:xenial-20170119
 
 ARG DEBIAN_FRONTEND=noninteractive
- 
+
+ENV DOCKER_IMAGE_NAME openskope/base
+
+COPY ./selftest /selftest
+
 RUN echo '***** update apt packages and install utilities *****'                                    \
  && apt-get -y update                                                                               \
  && apt-get -y install -y apt-utils                                                                 \
@@ -19,11 +23,15 @@ RUN echo '***** update apt packages and install utilities *****'                
                                                                                                     \
  && echo '***** create the /workspace directory *****'                                              \
  && mkdir /workspace                                                                                \
- && chown skope.skope /workspace
+ && chown skope.skope /workspace                                                                    \
+ && chown -R skope.skope /selftest
 
 WORKDIR /workspace
 VOLUME ["/workspace"]
 
 USER skope
+
+ENV SELFTEST=/selftest/openskope/base
+RUN /selftest/runtest.sh
 
 CMD echo "Usage: docker run openskope/base <linux command> [linux-command-arguments]"
