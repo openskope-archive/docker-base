@@ -1,6 +1,5 @@
 echo "docker image name               : ${DOCKER_IMAGE_NAME}"
 echo "os name                         : $(uname -o)"
-echo "kernel version                  : $(uname -r)"
 echo "target hardware platform        : $(uname -p)"
 echo "user name                       : $(id -run)" 
 echo "primary user group name         : $(id -rgn)"

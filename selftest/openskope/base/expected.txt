@@ -1,6 +1,5 @@
 docker image name               : openskope/base
 os name                         : GNU/Linux
-kernel version                  : 4.9.13-moby
 target hardware platform        : x86_64
 user name                       : skope
 primary user group name         : skope
