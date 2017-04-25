@@ -11,3 +11,4 @@ echo "properties of home directory    : $(ls -ld ~ | awk '{print $1, $3, $4, $9}
 echo "initial working directory       : $(pwd)"
 echo "properties of working directory : $(ls -ld $(pwd) | awk '{print $1, $3, $4, $9}')"
 echo "user shell                      : $SHELL"
+echo "user PATH                       : $PATH"

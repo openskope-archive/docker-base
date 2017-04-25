@@ -11,3 +11,4 @@ properties of home directory    : drwxr-xr-x skope skope /home/skope
 initial working directory       : /workspace
 properties of working directory : drwxr-xr-x skope skope /workspace
 user shell                      : /bin/bash
+user PATH                       : /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
